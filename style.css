@@ -1,12 +1,74 @@
-body{
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 30%,
+    rgba(25, 78, 187, 1) 66%,
+    rgb(0, 4, 5) 100%
+  );
 }
 
+canvas {
+  border: 1px solid black;
+  background: white;
+  border-radius: 10px;
+}
 
-canvas{
-    border: 1px solid black;
+.tools {
+  display: flex;
+  gap: 10px;
+  background-color: #1e1e1ecf;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  background-color: #00365a;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #00f2ff;
+  transition: 0.7s;
+  padding: 10px;
+
+  &:hover {
+    background-color: #00699e;
+    transform: scale(1.1);
+  }
+
+  &:active {
+    background-color: #00365a;
+  }
+}
+
+button.active {
+  background-color: aliceblue;
+}
+
+.color1 {
+  color: #000d22;
+}
+.color2 {
+  color: #00365a;
+}
+.color3 {
+  color: #00699e;
+}
+.color4 {
+  color: #00a8ed;
+}
+.color5 {
+  color: #00f2ff;
+}
+
+#clear {
+  background-color: rgb(175, 4, 4);
 }
